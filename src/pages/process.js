@@ -6,13 +6,12 @@ import SEO from "../components/seo"
 import BannerSection from "../components/Global/Banner"
 import Info from "../components/Home/info"
 
-const IndexPage = ({ data }) => (
+const ProcessPage = ({ data }) => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <BannerSection
       img={data.img.childImageSharp.fluid}
-      title="We build ideas."
-      children="Gianthouse was started by the spirit of turning imaginations into reality. With deep understanding in technology and business, we develop or even invest in interesting projects. DevOps is the culture we adopted to deliver quality digital experiences."
+      title="We are agile."
       styleClass="default-banner"
     />
     <Info />
@@ -21,12 +20,9 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "home-banner.jpg" }) {
+    img: file(relativePath: { eq: "process-banner.jpg" }) {
       childImageSharp {
-        fluid(
-          quality: 100
-          duotone: { highlight: "#2aa1c1", shadow: "#071730", opacity: 50 }
-        ) {
+        fluid {
           ...GatsbyImageSharpFluid_tracedSVG
         }
       }
@@ -34,4 +30,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default ProcessPage

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Open+Sans:300');
+
 :root {
   --mainTeal: #2aa1c1;
   --mainWhite: #fff;
@@ -16,9 +18,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--mainTeal);
-  font-family: "Roboto", sans-serif !important;
-  font-weight: 700;
+  color: var(--mainWhite);
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 .mail-icon {
@@ -26,4 +27,48 @@ h6 {
   color: var(--mainTeal);
   font-size: 2em;
   height: 100%;
+}
+
+.default-banner {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10vw;
+  font-size: 1.2rem;
+  background-size: cover;
+}
+
+.default-btn {
+  background-color: var(--mainTeal);
+  color: var(--mainWhite);
+  border-radius: 999px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding: 0.8em 1.6em;
+}
+
+.default-btn:hover {
+  background-color: transparent;
+  color: var(--mainTeal);
+  border-radius: 999px;
+  border-color: var(--mainTeal);
+  border-width: 1.5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding: 0.8em 1.6em;
+}
+
+.separator {
+  width: 80px;
+  height: 1px;
+  border: 0.5px solid #2aa1c1 !important;
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+.footer {
+  background: var(--mainTeal);
 }
