@@ -39,6 +39,15 @@ h6 {
   background-size: cover;
 }
 
+.subpage-banner {
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 10vw;
+  font-size: 1.2rem;
+  background-size: cover;
+}
+
 .default-btn {
   background-color: var(--mainTeal);
   color: var(--mainWhite);

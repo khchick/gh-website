@@ -12,7 +12,8 @@ const ProcessPage = ({ data }) => (
     <BannerSection
       img={data.img.childImageSharp.fluid}
       title="We are agile."
-      styleClass="default-banner"
+      children="DevOps is the culture we adopted to deliver quality digital experiences."
+      styleClass="subpage-banner"
     />
     <Info />
   </Layout>
