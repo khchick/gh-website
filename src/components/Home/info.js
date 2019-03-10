@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-// import Title from "../Global/Title"
+import Title from "../Global/Title"
 
 export default function Info() {
   return (
@@ -8,7 +8,7 @@ export default function Info() {
       <div className="container">
         <div className="row">
           <div className="col-10 col-sm-8 mx-auto text-center">
-            {/* <Title title="Who Are You" /> */}
+            <Title title="Who Are We" />
             <div class="separator"></div>
             <p className="mb-5">
               Gianthouse was started by the spirit of turning imaginations into
