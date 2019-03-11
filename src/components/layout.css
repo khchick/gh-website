@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:700|Open+Sans:300');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:700|Open+Sans:300");
 
 :root {
   --mainTeal: #2aa1c1;
+  --overlay: #cc007e;
   --mainWhite: #fff;
   --mainBlack: #000;
 }
@@ -19,7 +20,7 @@ h4,
 h5,
 h6 {
   color: var(--mainWhite);
-  font-family: 'Ubuntu', sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 .mail-icon {
@@ -76,6 +77,75 @@ h6 {
   border: 0.5px solid #2aa1c1 !important;
   margin: auto;
   margin-bottom: 22px;
+}
+
+.project-image {
+  max-height: 40vh;
+  margin: 0;
+}
+
+.project-container {
+  margin: 0 20px;
+  position: relative;
+}
+
+.project-container:hover .overlay {
+  opacity: 0.85;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--overlay);
+}
+
+.project-info {
+  width: 80%;
+  color: var(--mainWhite);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.client-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.client {
+  font-size: 1.2em;
+}
+
+.tech {
+  font-size: 0.8em;
+}
+
+.type-list {
+  margin: 10px 0 30px 20px;
+}
+
+.project-type {
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+  font-size: 0.8em;
+  background-color: transparent;
+  color: var(--mainTeal);
+  border-radius: 999px;
+  border-color: var(--mainTeal);
+  border-width: 1px;
 }
 
 .footer {

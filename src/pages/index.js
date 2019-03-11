@@ -1,10 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BannerSection from "../components/Global/Banner"
-import Info from "../components/Home/info"
+import HomeInfo from "../components/Home/HomeInfo"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -15,7 +14,7 @@ const IndexPage = ({ data }) => (
       children="Gianthouse was started by the spirit of turning imaginations into reality. With deep understanding in technology and business, we develop or even invest in interesting projects. DevOps is the culture we adopted to deliver quality digital experiences."
       styleClass="default-banner"
     />
-    <Info />
+    <HomeInfo />
   </Layout>
 )
 
