@@ -50,6 +50,18 @@ h6 {
 }
 
 .default-btn {
+  background-color: transparent;
+  color: var(--mainTeal);
+  border-radius: 999px;
+  border-color: var(--mainTeal);
+  border-width: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding: 0.8em 1.6em;
+}
+
+.default-btn:hover {
   background-color: var(--mainTeal);
   color: var(--mainWhite);
   border-radius: 999px;
@@ -59,16 +71,33 @@ h6 {
   padding: 0.8em 1.6em;
 }
 
-.default-btn:hover {
+.filter-off {
+  cursor: pointer;
+  margin: 5px;
   background-color: transparent;
   color: var(--mainTeal);
   border-radius: 999px;
   border-color: var(--mainTeal);
-  border-width: 1.5px;
+  border-width: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 0.8em 1.6em;
+}
+
+.filter-on {
+  cursor: pointer;
+  margin: 5px;
+  background-color: var(--mainTeal);
+  color: var(--mainWhite);
+  border-radius: 999px;
+  border-color: var(--mainTeal);
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 0.8em;
   padding: 0.8em 1.6em;
+  text-transform: uppercase;
 }
 
 .separator {
@@ -138,14 +167,17 @@ h6 {
 }
 
 .project-type {
-  padding: 5px 10px;
-  margin: 0 10px 0 0;
-  font-size: 0.8em;
+  margin: 5px;
   background-color: transparent;
   color: var(--mainTeal);
   border-radius: 999px;
   border-color: var(--mainTeal);
   border-width: 1px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 0.8em 1.6em;
 }
 
 .footer {
