@@ -8,7 +8,7 @@ import ContactInfo from "../components/Contact/ContactInfo"
 
 const ContactPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
     <BannerSection
       img={data.img.childImageSharp.fluid}
       title="Reach out now."

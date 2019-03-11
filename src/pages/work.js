@@ -9,7 +9,7 @@ import Portfolio from "../components/Work/Portfolio"
 
 const WorkPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Work" keywords={[`gatsby`, `application`, `react`]} />
     <BannerSection
       img={data.img.childImageSharp.fluid}
       title="We know our stuff."
